@@ -1,6 +1,6 @@
 {
-  "name": "@digitalbazaar/http-client",
-  "version": "1.2.1-0",
+  "name": "@digitalcredentials/http-client",
+  "version": "1.2.0",
   "description": "An opinionated, isomorphic HTTP client.",
   "license": "BSD-3-Clause",
   "files": [
@@ -68,22 +68,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalbazaar/http-client"
+    "url": "https://github.com/digitalcredentials/http-client"
   },
   "keywords": [
     "http",
     "isomorphic",
     "http client"
   ],
-  "author": {
-    "name": "Digital Bazaar, Inc.",
-    "email": "support@digitalbazaar.com",
-    "url": "https://digitalbazaar.com/"
-  },
   "bugs": {
-    "url": "https://github.com/digitalbazaar/http-client/issues"
+    "url": "https://github.com/digitalcredentials/http-client/issues"
   },
-  "homepage": "https://github.com/digitalbazaar/http-client",
+  "homepage": "https://github.com/digitalcredentials/http-client",
   "engines": {
     "node": ">=10.0.0"
   },
