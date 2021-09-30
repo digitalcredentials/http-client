@@ -22,7 +22,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'tests/*.js': ['webpack', 'sourcemap']
+      'test/*.js': ['webpack', 'sourcemap']
     },
 
     webpack: {
