@@ -1,5 +1,10 @@
 # @digitalcredentials/http-client ChangeLog
 
+## 1.2.1 - 2021-09-39
+
+### Changed
+- Remove `esm` runtime transpiler usage.
+
 ## 1.2.0 - 2021-07-19
 
 ### Added
