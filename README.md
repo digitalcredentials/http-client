@@ -5,7 +5,7 @@ An opinionated, isomorphic HTTP client.
 
 #### Import httpClient
 ```js
-import {httpClient} from '@digitalbazaar/http-client';
+import {httpClient} from '@digitalcredentials/http-client';
 ```
 
 #### GET a JSON response in the browser
