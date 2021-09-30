@@ -1,7 +1,7 @@
 /*!
  * Copyright (c) 2020 Digital Bazaar, Inc. All rights reserved.
  */
-import dbHttpClient from '../lib/index';
+import dbHttpClient from '../lib/index.js';
 import isNode from 'detect-node';
 
 describe('http-client API', () => {

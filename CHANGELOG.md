@@ -1,4 +1,4 @@
-# @digitalbazaar/http-client ChangeLog
+# @digitalcredentials/http-client ChangeLog
 
 ## 1.2.0 - 2021-07-19
 
