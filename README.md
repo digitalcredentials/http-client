@@ -1,6 +1,9 @@
 # http-client
 An opinionated, isomorphic HTTP client.
 
+[![Node.js CI](https://github.com/digitalcredentials/http-client/workflows/Node.js%20CI/badge.svg)](https://github.com/digitalcredentials/http-client/actions?query=workflow%3A%22Node.js+CI%22)
+[![NPM Version](https://img.shields.io/npm/v/@digitalcredentials/http-client.svg)](https://npm.im/@digitalcredentials/http-client)
+
 ### Usage
 
 #### Import httpClient
