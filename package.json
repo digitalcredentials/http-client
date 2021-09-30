@@ -1,6 +1,6 @@
 {
   "name": "@digitalcredentials/http-client",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "An opinionated, isomorphic HTTP client.",
   "license": "BSD-3-Clause",
   "files": [
@@ -50,9 +50,8 @@
     "detect-node": "^2.0.4",
     "eslint": "^7.2.0",
     "eslint-config-digitalbazaar": "^2.5.0",
-    "karma": "^6.3.4",
-    "esm": "^3.2.22",
     "karma": "^5.0.9",
+    "esm": "^3.2.22",
     "karma-babel-preprocessor": "^8.0.1",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^3.1.0",
