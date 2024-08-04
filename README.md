@@ -1,22 +1,24 @@
 # http-client
-An opinionated, isomorphic HTTP client for Node.js, browsers, and React Native.
+[![NPM Version](https://img.shields.io/npm/v/@digitalcredentials/http-client.svg)](https://npm.im/@digitalcredentials/http-client)
+
+> An opinionated, isomorphic HTTP client for Node.js, browsers, and React Native.
 
 ### Usage
 
 #### Import httpClient (Node.js)
 ```js
 import https from 'https';
-import {httpClient} from '@digitalbazaar/http-client';
+import {httpClient} from '@digitalcredentials/http-client';
 ```
 
 #### Import httpClient (browsers or React Native)
 ```js
-import {httpClient} from '@digitalbazaar/http-client';
+import {httpClient} from '@digitalcredentials/http-client';
 ```
 
 #### Import and initialize a custom Bearer Token client
 ```js
-import {httpClient} from '@digitalbazaar/http-client';
+import {httpClient} from '@digitalcredentials/http-client';
 
 const httpsAgent = new https.Agent({rejectUnauthorized: false});
 
