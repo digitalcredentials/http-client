@@ -1,13 +1,17 @@
 {
-  "name": "@digitalbazaar/http-client",
+  "name": "@digitalcredentials/http-client",
   "version": "4.1.2-0",
   "description": "An opinionated, isomorphic HTTP client.",
   "license": "BSD-3-Clause",
   "type": "module",
-  "main": "./dist/cjs/index.cjs",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
   "exports": {
-    "require": "./dist/cjs/index.cjs",
-    "import": "./lib/index.js"
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/esm/index.js"
+    },
+    "./package.json": "./package.json"
   },
   "browser": {
     "./lib/agentCompatibility.js": "./lib/agentCompatibility-browser.js",
@@ -17,14 +21,13 @@
     "./lib/agentCompatibility.js": "./lib/agentCompatibility-browser.js"
   },
   "scripts": {
-    "rollup": "rollup -c rollup.config.js",
+    "rollup": "rollup -c rollup.config.js && ./build-dist.sh",
     "build": "npm run clear && npm run rollup",
     "clear": "rimraf dist/ && mkdir dist",
     "prepare": "npm run build",
     "rebuild": "npm run clear && npm run build",
-    "test": "npm run test-node && npm run test-node-cjs",
+    "test": "npm run test-node && npm run test-karma",
     "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks -t 30000 -A -R ${REPORTER:-spec} --require tests/test-mocha.js tests/*.spec.js",
-    "test-node-cjs": "cross-env NODE_ENV=test mocha --preserve-symlinks -t 30000 -A -R ${REPORTER:-spec} --require tests/test-mocha.cjs tests/*.spec.cjs",
     "test-karma": "karma start karma.conf.cjs",
     "test-watch": "cross-env NODE_ENV=test mocha --watch --parallel --preserve-symlinks -t 30000 -A -R ${REPORTER:-spec} --require tests/test-mocha.js tests/*.spec.js",
     "coverage": "cross-env NODE_ENV=test c8 npm run test-node",
@@ -34,7 +37,11 @@
   },
   "files": [
     "lib/*",
-    "dist/*"
+    "dist/*",
+    "rollup.config.js",
+    "build-dist.sh",
+    "README.md",
+    "LICENSE"
   ],
   "dependencies": {
     "ky": "^1.0.1",
@@ -60,13 +67,13 @@
     "karma-sourcemap-loader": "^0.4.0",
     "karma-webpack": "^5.0.0",
     "mocha": "^10.2.0",
-    "rimraf": "^5.0.0",
+    "rimraf": "^6.0.1",
     "rollup": "^3.20.2",
     "webpack": "^5.79.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalbazaar/http-client"
+    "url": "https://github.com/digitalcredentials/http-client"
   },
   "keywords": [
     "http",
@@ -79,9 +86,9 @@
     "url": "https://digitalbazaar.com/"
   },
   "bugs": {
-    "url": "https://github.com/digitalbazaar/http-client/issues"
+    "url": "https://github.com/digitalcredentials/http-client/issues"
   },
-  "homepage": "https://github.com/digitalbazaar/http-client",
+  "homepage": "https://github.com/digitalcredentials/http-client",
   "engines": {
     "node": ">=18.0"
   },
