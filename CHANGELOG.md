@@ -1,4 +1,9 @@
-# @digitalbazaar/http-client ChangeLog
+# @digitalcredentials/http-client ChangeLog
+
+## 5.0.0 - 2024-08-03
+
+### Changed
+- **BREAKING**: Re-forked as `@digitalcredentials/http-client` to fix broken dist export (to fix Webpack/Next.js behavior)
 
 ## 4.1.1 - 2024-02-21
 
