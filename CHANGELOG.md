@@ -1,5 +1,10 @@
 # @digitalcredentials/http-client ChangeLog
 
+## 5.0.1 - 2024-08-03
+
+### Fixed
+- Fix CJS dist package.json, ensure it's type commonjs.
+
 ## 5.0.0 - 2024-08-03
 
 ### Changed

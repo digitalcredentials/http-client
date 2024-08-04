@@ -6,6 +6,13 @@ export const httpClient = cjsModule.httpClient;
 export const kyPromise = cjsModule.kyPromise;
 !EOF
 
+cat >dist/package.json <<!EOF
+{
+  "type": "commonjs"
+}
+!EOF
+
+
 cat >dist/esm/package.json <<!EOF
 {
   "type": "module"
