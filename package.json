@@ -18,7 +18,8 @@
     "./tests/utils.cjs": "./tests/utils-browser.cjs"
   },
   "react-native": {
-    "./lib/agentCompatibility.js": "./lib/agentCompatibility-browser.js"
+    "./lib/agentCompatibility.js": "./lib/agentCompatibility-browser.js",
+    "./dist/agentCompatibility.js": "./dist/agentCompatibility-browser.js"
   },
   "scripts": {
     "rollup": "rollup -c rollup.config.js && ./build-dist.sh",
