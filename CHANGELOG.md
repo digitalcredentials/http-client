@@ -1,5 +1,10 @@
 # @digitalcredentials/http-client ChangeLog
 
+## 5.0.2 - 2024-08-05
+
+### Fixed
+- Adjust `react-native` webpack section in package.json, include `dist/` in it.
+
 ## 5.0.1 - 2024-08-03
 
 ### Fixed
