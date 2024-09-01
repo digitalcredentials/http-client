@@ -8,7 +8,13 @@ export const kyPromise = cjsModule.kyPromise;
 
 cat >dist/package.json <<!EOF
 {
-  "type": "commonjs"
+    "type": "commonjs",
+    "browser": {
+      "./agentCompatibility.js": "./agentCompatibility-browser.js",
+    },
+    "react-native": {
+      "./agentCompatibility.js": "./agentCompatibility-browser.js"
+    }
 }
 !EOF
 
