@@ -1,5 +1,10 @@
 # @digitalcredentials/http-client ChangeLog
 
+## 5.0.3 - 2024-09-01
+
+### Fixed
+- Fix remaining build issue on ReactNative and browser.
+
 ## 5.0.2 - 2024-08-05
 
 ### Fixed
