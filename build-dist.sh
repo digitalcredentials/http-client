@@ -10,7 +10,7 @@ cat >dist/package.json <<!EOF
 {
     "type": "commonjs",
     "browser": {
-      "./agentCompatibility.js": "./agentCompatibility-browser.js",
+      "./agentCompatibility.js": "./agentCompatibility-browser.js"
     },
     "react-native": {
       "./agentCompatibility.js": "./agentCompatibility-browser.js"
